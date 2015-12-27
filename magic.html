@@ -6,43 +6,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="js/jquery.min.js"></script>
+  <script src="js/magic.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/magic.css">
 
-	<script type="text/javascript">
-var cards = ["#one", "#two", "#three", "#four", "#five", "#six"];
-var card;
-function select (onCard) {
-	if (card == 5) {
-
-	} else {
-
-	}
-	nextCard();
-	if (onCard == 'yes') {
-		console.log('aaa')
-	} else {
-		console.log('bbb')
-	}
-}
-
-function nextCard () {
-	$(cards[card]).toggleClass('hide');
-	card += 1;
-	$(cards[card]).toggleClass('hide');
-}
-function no () {
-	alert('no');
-}
-
-function begin () {
-	$('#game').toggleClass('hide');
-	$('#intro').toggleClass('hide');
-	card = 0;
-}
-	</script>
 </head>
 <body>
 
