@@ -1,28 +1,29 @@
 body {
-	font-family: 'Lato', Helvetica, sans-serif;
-	font-weight: 300;
-	background: #e5e5e5;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 300;
+  background: #e5e5e5;
 }
 
 body > div {
-	background: #fff;
-	min-height: 100vh;
+  background: #fff;
+  min-height: 100vh;
 }
 
 div.landing {
-	padding-top: 10vh;
-	background: #fff;
+  color: #232323;
+  background: #fff;
+  padding: 20pt;
 }
 
 div.card {
-	max-width: 95%;
-	/*border: dotted 1px black;*/
-	margin: 0 auto;
+  max-width: 95%;
+  /*border: dotted 1px black;*/
+  margin: 0 auto;
 }
 
 code {
-	font-family: 'Droid Sans Mono', monospace;
-	font-size: 100%;
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 100%;
   background: #fff;
   border: 1px solid #E1E1E1;
   border-radius: 0;
@@ -30,26 +31,26 @@ code {
 }
 
 p {
-	font-size: 150%;
+  font-size: 150%;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 input.button.yes {
-	background-color: #3BC651;
-	border-color: #3BC651;
+  background-color: #3BC651;
+  border-color: #3BC651;
 }
 
 input.button.no {
-	background-color: #D93829;
-	border-color: #D93829;
+  background-color: #D93829;
+  border-color: #D93829;
 }
 
 @media(min-width: 550px) {
-	div.card {
-		width: 400px;
-		font-size: 18pt;
-	}
+  div.card {
+    width: 400px;
+    font-size: 18pt;
+  }
 }
