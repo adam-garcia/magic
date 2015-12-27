@@ -33,6 +33,6 @@ function nextCard () {
 
 function guessCard () {
     if (guess == 0) { guess = 1 }
-    alert('Was your number ' + guess + ' ?');
+    alert('Was your number ' + guess + '?');
     location.reload();
 }
