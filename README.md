@@ -8,7 +8,7 @@ Things I'd like to play around with later:
 
 - Game Mechanics
 	- Expanding the range
-		- 1-63 isn't too big of a range &edash; going to 255 or 511 might be fun
+		- 1-63 isn't too big of a range &mdash; going to 255 or 511 might be fun
 	- Removing "ruled out" numbers at each step
 	- Changing the "guess" from an alert box to within-page
 - Programming
