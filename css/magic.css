@@ -1,7 +1,12 @@
 body {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300;
-  background: #e5e5e5;
+  background: #fff;
+  color: #232323;
+}
+
+.hide {
+  display: none;
 }
 
 body > div {
@@ -10,8 +15,6 @@ body > div {
 }
 
 div.landing {
-  color: #232323;
-  background: #fff;
   padding: 20pt;
 }
 
@@ -31,12 +34,14 @@ code {
 }
 
 p {
-  font-size: 150%;
+  font-size: 2em;
 }
 
-.hide {
-  display: none;
-}
+/*Larger than mobile 
+  @media (min-width: 400px) {
+
+  } */
+
 
 input.button.yes {
   background-color: #3BC651;
@@ -47,6 +52,8 @@ input.button.no {
   background-color: #D93829;
   border-color: #D93829;
 }
+
+
 
 @media(min-width: 550px) {
   div.card {
