@@ -63,7 +63,7 @@ function guessCard () {
         guess = sum(guess);
         $("#six").addClass('hide');
         $("#game").addClass('hide');
-        $("#guess-text").text("Was your card " + guess + "?");
+        $("#guess-text").text("Was your number " + guess + "?");
         $("#guess").removeClass('hide');
         // location.reload();
     }
