@@ -17,8 +17,10 @@ function sum (array) {
 }
 
 function beginGame () {
-    $('#game').toggleClass('hide');
-    $('#intro').toggleClass('hide');
+    $('#game').removeClass('hide');
+    $('#one').removeClass('hide');
+    $('#intro').addClass('hide');
+    $('#guess').addClass('hide');
     card = 0;
     guess = [];
 }
@@ -53,10 +55,16 @@ function lastCard () {
 }
 
 function guessCard () {
-    if (length.guess == 0) { 
-        alert('Was your number ' + 1 + '?');
-    } else {
-        alert('Was your number ' + sum(guess) + '?');
+    if (sum(guess) == 0) { 
+        alert('Hmm. Are you sure your number is between 1 and 63?');
         location.reload();
+    } else {
+        // alert('Was your number ' + sum(guess) + '?');
+        guess = sum(guess);
+        $("#six").addClass('hide');
+        $("#game").addClass('hide');
+        $("#guess-text").text("Was your card " + guess + "?");
+        $("#guess").removeClass('hide');
+        // location.reload();
     }
 }

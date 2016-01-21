@@ -3,8 +3,8 @@
 <html>
 <head>
   <title>Mind-Reader</title>
-  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Droid+Sans+Mono' rel='stylesheet' type='text/css'> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/magic.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
@@ -18,12 +18,16 @@
 <div class="container-fluid">
   <div class="row landing" align="center">
     <div class="twelve columns">
-        <h1> <i class="fa fa-magic"></i></h1>
-        <h1>Magic Mind-Reader</h1>
-        <div id="intro">
-          <p align="left">Hello! I'm here to read your mind. </br> First, I need you to think of a number between 1 and 63.</p>
-          <button type="button" class="back" onclick="beginGame()">Got one!</button>
-        </div>
+      <h1><i class="fa fa-magic"></i></h1>
+      <h1>Magic Mind-Reader</h1>
+      <div id="intro">
+        <p align="left">Hello! I'm here to read your mind. </br> First, I need you to think of a number between 1 and 63.</p>
+        <button type="button" class="back" onclick="beginGame()">Got one!</button>
+      </div>
+      <div id="guess" class="hide">
+        <h3 id="guess-text"></h3>
+        <button type="button" class="back" onclick="beginGame()">Again!</button>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -84,7 +88,7 @@
 56 57 58 59 60 61 62 63
  </code></pre>
     </div>
-    <button type="button" class="back" onclick="lastCard()">Go Back</button>
+    <!-- <button type="button" class="back" onclick="lastCard()">Go Back</button> -->
   </div>
 </div>
 
